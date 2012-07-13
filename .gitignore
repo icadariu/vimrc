@@ -1,0 +1,5 @@
+.gitCOMMIT_EDITMSG
+bundle
+view/
+*.old
+*.swp
