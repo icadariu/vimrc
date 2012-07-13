@@ -1,11 +1,9 @@
-*** working on this readme for the moment **
-
 Installation
 ============
 
 For auto install just download auto-install.sh and make sure you have git installed.
 
-To manual install, follow this steppes: 
+To manual install, follow this steppes:
 
     mv ~/.vim ~/.vim.old && mv ~/.vimrc ~/vimrc.old
     git clone git://github.com/never2far/vimrc.git ~/.vim
@@ -47,10 +45,10 @@ To manual install, follow this steppes:
 
 ## delimitMate
 
-**Introduction**: This plug-in provides automatic closing of quotes, parenthesis, brackets, etc.; besides some other related features 
+**Introduction**: This plug-in provides automatic closing of quotes, parenthesis, brackets, etc.; besides some other related features
 that should make your time in insert mode a little bit easier. Read more [vim.org/scripts](http://www.vim.org/scripts/script.php?script_id=2754)
 
-**Usage:** Most of the features can be modified or disabled permanently, using global variables, or on a FileType basis, 
+**Usage:** Most of the features can be modified or disabled permanently, using global variables, or on a FileType basis,
 using autocommands. With a couple of exceptions and limitations, this features don't brake undo, redo or history.
 
 
@@ -59,7 +57,7 @@ using autocommands. With a couple of exceptions and limitations, this features d
 **Introduction**: Syntax check of your script: c,cpp,html,java,javascript,python,lua,php,pylint,ryby,tex,xml
 
 **Usage:** By default, |:CheckSyntax| is mapped to <F5> (if not mapped already), and  automatically executed when saving the buffer.
-The |:CheckSyntax| command takes one optional argument: the mode (default: &filetype). The following modes are pre-defined (and maybe some more): 
+The |:CheckSyntax| command takes one optional argument: the mode (default: &filetype). The following modes are pre-defined (and maybe some more):
 
 ##  git-vim
 
@@ -67,26 +65,26 @@ The |:CheckSyntax| command takes one optional argument: the mode (default: &file
 
 **Usage**: More details: https://github.com/motemen/git-vim
 
-## vim-easymotion 
+## vim-easymotion
 
 **Introduction:** EasyMotion provides a much simpler way to use some motions in vim
 
 **Usage**: Leater + w and then character
 
-## nerdcommenter 
+## nerdcommenter
 
 **Introduction:** provides many different commenting operations and styles which are invoked via key mappings and a menu.
 
 **Usage**: Leader + cc Comment out the current line or text selected in visual mode.
- 
+
 ##  nerdtree
 
-**Introduction:** allows you to explore your filesystem and to open files and directories. 
+**Introduction:** allows you to explore your filesystem and to open files and directories.
 
 **Usage**: Leader + [
 
 
-## vim-fugitive 
+## vim-fugitive
 
 **Introduction:** fugitive.vim may very well be the best Git wrapper of all time: https://github.com/tpope/vim-fugitive/blob/master/README.markdown
 
@@ -94,9 +92,9 @@ The |:CheckSyntax| command takes one optional argument: the mode (default: &file
 
 ##  svndiff
 
-**Introduction:** runs a diff between the current buffer and the original file in the source control system, and applies highlighting to show where the buffer differs. The original text is not shown, only colors are used to indicate where changes were made. 
+**Introduction:** runs a diff between the current buffer and the original file in the source control system, and applies highlighting to show where the buffer differs. The original text is not shown, only colors are used to indicate where changes were made.
 
-##  supertab 
+##  supertab
 
 **Introduction:**is a plugin which allows you to perform all your insert completion (|ins-completion|) using the tab key.
 
@@ -104,16 +102,16 @@ The |:CheckSyntax| command takes one optional argument: the mode (default: &file
 
 ##  buftabs
 
-**Introduction:** This is a simple script that shows a tabs-like list of buffers in the bottom of the window. 
+**Introduction:** This is a simple script that shows a tabs-like list of buffers in the bottom of the window.
 
 **Usage**: Ctrl + left/right to jump between tabs from the bottom of the screen
 
-## Show Marks 
+## Show Marks
 
 **Introduction:** Visually shows the location of marks.Marks are useful for jumping back and forth between interesting points in a buffer, but can be hard to keep track of without any way to see where you have placed them.  ShowMarks hopefully makes life easier by placing a sign in the leftmost column of the buffer.  The sign indicates the label of the mark and its location.
 It can be toggled on and off and individual marks can be hidden(effectively removing them).
 
-**Usage**:Leader + 
+**Usage**:Leader +
    mt : Toggles ShowMarks on and off.
    mh : Hides an individual mark.
    ma : Hides all marks in the current buffer.
@@ -125,11 +123,11 @@ To jump on the mark from the left, you must press ` and number. Other help: http
 **Introduction:** is a source code browser plugin for Vim and provides an overview of the structure of source code files and allows
 you to efficiently browse through source code files for different programming languages
 
-**Usage**: Leader +] TlistToggle 
+**Usage**: Leader +] TlistToggle
 
 ##  SearchComplete
 
-**Introduction:** auto complete search words using tab 
+**Introduction:** auto complete search words using tab
 
 **Usage**: / part of the word + tab
 
@@ -140,6 +138,6 @@ you to efficiently browse through source code files for different programming la
 
 **Usage**: Leader + t
 
-## pyflakes.vim 
+## pyflakes.vim
 
 **Introduction:** A script to highlight Python code on the fly with warnings from Pyflakes, a Python lint tool
