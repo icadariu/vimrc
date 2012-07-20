@@ -10,7 +10,7 @@
 # check if git is installed
 
 which git > /dev/null
-[ $? -eq 1 ] && echo "git is not installed. To install use: sudo apt-get install git" && exit 1
+[ $? -eq 1 ] && echo "git is not installed..." && exit 1
 which vim > /dev/null
 [ $? -eq 1 ] && echo "Install vim first" && exit 1
 
