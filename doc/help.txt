@@ -7,13 +7,15 @@ Notes about vim *vim* *sfvim* <<<
  A realy big section closed with a tag <<<
  --- lots of stuf ---
  shortcut must be between * *
- Closing tag >>>
+ Closing tag
+ :helptags ~/.vim/doc
+  >>>
 
 Vim shortcuts *shortcuts* <<<
 <Leader> = ,
 
 ,f -> same as :FixWhitespace
-,w -> same as :w
+,s -> same as :w
 ,n -> no highlight
 ,q -> same as :q!
 
