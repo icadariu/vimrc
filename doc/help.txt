@@ -1,0 +1,23 @@
+" vim: filetype=help foldmethod=marker foldmarker=<<<,>>> modifiable noreadonly
+Notes about vim *vim* *sfvim* <<<
+ Stuff I have learned about vim.
+ Create a help link like this |add-local-help|
+ Regenerate help tags: |helptags|
+
+ A realy big section closed with a tag <<<
+ --- lots of stuf ---
+ shortcut must be between * *
+ Closing tag >>>
+
+Vim shortcuts *shortcuts* <<<
+<Leader> = ,
+
+,f -> same as :FixWhitespace
+,w -> same as :w
+,n -> no highlight
+,q -> same as :q!
+
+F2  -> insert into paste mode
+F12 -> no line number
+
+Ctrl + j,k -> move line with cursor down or up

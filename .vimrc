@@ -167,9 +167,9 @@ nnoremap <Leader>9 :9b<CR>
 nnoremap <Leader>0 :10b<CR>
 nnoremap <Leader>l :buffers<CR>:buffer<Space>
 nnoremap <Leader>b :bp<CR>
-nnoremap <Leader>f :bn<CR>
 nnoremap <Leader>g :e#<CR>
 nmap <silent> <leader>q :q!<CR>
+nmap <silent> <leader>f :FixWhitespace<CR>
 nmap <silent> <leader>n :silent :nohlsearch<CR>
 nmap <silent> <leader>s :w<CR>
 nnoremap <F12> :set nonumber!<CR>
