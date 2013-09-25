@@ -6,7 +6,7 @@ For auto install just download auto-install.sh and make sure you have git instal
 To manual install, follow this steppes:
 
     mv ~/.vim ~/.vim.old && mv ~/.vimrc ~/vimrc.old
-    git clone git://github.com/never2far/vimrc.git ~/.vim
+    git clone git://github.com/icadariu/vimrc.git ~/.vim
     mkdir -p ~/.vim/bundle/ && git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
     vim -u ~/.vim/bundles.vim +BundleInstall +q
 
@@ -21,7 +21,6 @@ To manual install, follow this steppes:
 * [scrooloose/nerdcommenter](http://github.com/scrooloose/nerdcommenter)
 * [ervandew/supertab](https://github.com/ervandew/supertab)
 * [vim-scripts/SearchComplete](https://github.com/vim-scripts/SearchComplete)
-* [never2far/snipmate.vim](https://github.com/never2far/snipmate.vim)
 * [tpope/vim-fugitive](http://github.com/tpope/vim-fugitive)
 
 ## delimitMate

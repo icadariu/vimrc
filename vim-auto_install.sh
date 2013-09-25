@@ -14,7 +14,7 @@ which git > /dev/null
 which vim > /dev/null
 [ $? -eq 1 ] && echo "Install vim first" && exit 1
 
-git clone git://github.com/never2far/vimrc.git ~/.vim
+git clone https://github.com/icadariu/vimrc.git ~/.vim
 
 # clone vundle management plugin
 mkdir -p ~/.vim/bundle/ && git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
