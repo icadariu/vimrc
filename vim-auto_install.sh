@@ -23,6 +23,7 @@ mkdir -p ~/.vim/bundle/ && git clone https://github.com/gmarik/vundle ~/.vim/bun
 
 vim -u ~/.vim/bundles.vim +BundleInstall +q
 
+# not used anymore
 #cd ~/.vim/bundle/pyflakes-vim/
 #git submodule init
 #git submodule update
