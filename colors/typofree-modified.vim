@@ -14,7 +14,8 @@ endif
 
 let colors_name = "typofree-modified"
 
-hi Normal        ctermbg=234  cterm=NONE
+hi Normal        ctermbg=None cterm=NONE
+"hi Normal        ctermbg=234  cterm=NONE "old colour
 hi SpecialKey    ctermfg=127   ctermbg=NONE  cterm=NONE " ^M
 hi NonText       ctermfg=236   ctermbg=NONE  cterm=NONE " e.g. the + symbol on line wrap
 hi PreProc       ctermfg=67    ctermbg=NONE  cterm=NONE
