@@ -171,6 +171,8 @@ nnoremap <Leader>0 :10b<CR>
 nnoremap <Leader>l :buffers<CR>:buffer<Space>
 nnoremap <Leader>b :bp<CR>
 nnoremap <Leader>g :e#<CR>
+" other vim shortcuts
+nmap <silent> <leader>u :GundoToggle<CR>
 nmap <silent> <leader>q :q!<CR>
 nmap <silent> <leader>f :FixWhitespace<CR>
 nmap <silent> <leader>n :silent :nohlsearch<CR>
