@@ -18,6 +18,7 @@ Bundle 'tomtom/tlib_vim.git'
 Bundle 'MarcWeber/vim-addon-mw-utils.git'
 Bundle 'garbas/vim-snipmate.git'
 Bundle 'tpope/vim-fugitive'
+Bundle 'saltstack/salt-vim'
 
 "Bundle 'icadariu/snipmate.vim'
 "Bundle 'Lokaltog/vim-powerline'

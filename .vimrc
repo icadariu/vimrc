@@ -54,6 +54,9 @@ set hlsearch                                    " highlight search terms
 set hidden
 set wildchar=<Tab> wildmenu wildmode=full
 set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif
+" Saltstack
+set nocompatible
+filetype plugin indent on
 " Turn on smart indent
 set smartindent         " it may brake Eric Mc Sween's indent fix
 set softtabstop=4
