@@ -176,6 +176,8 @@ nmap <silent> <leader>u :GundoToggle<CR>
 nmap <silent> <leader>q :q!<CR>
 nmap <silent> <leader>f :FixWhitespace<CR>
 nmap <silent> <leader>n :silent :nohlsearch<CR>
+"set iptables if it's not working automatically
+nmap <silent> <leader>i :silent :setfiletype iptables<CR>
 nmap <silent> <leader>s :w<CR>
 nnoremap <F12> :set nonumber!<CR>
 nnoremap <F9> :ShowMarksToggle<CR>
