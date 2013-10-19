@@ -16,20 +16,4 @@ which vim > /dev/null
 
 git clone https://github.com/icadariu/vimrc.git ~/.vim
 
-# clone vundle management plugin
-mkdir -p ~/.vim/bundle/ && git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
-
-# install plugins from bundles.vim
-
-vim -u ~/.vim/bundles.vim +BundleInstall +q
-
-# not used anymore
-#cd ~/.vim/bundle/pyflakes-vim/
-#git submodule init
-#git submodule update
-
-# create symbolic links
-
 [ ! -h ~/.vimrc ] && ln -s ~/.vim/.vimrc ~/.vimrc
-
-#xterm-256color

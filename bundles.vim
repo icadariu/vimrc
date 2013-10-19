@@ -1,6 +1,16 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
+let TestVundle=1
+let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
+if !filereadable(vundle_readme)
+    echo "Installing Vundle.."
+    echo ""
+    silent !mkdir -p ~/.vim/bundle
+    silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+    let TestVundle=0
+endif
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -25,37 +35,11 @@ Bundle 'kien/tabman.vim'
 Bundle 'klen/python-mode'
 Bundle 'puppetlabs/puppet-syntax-vim'
 
-"Bundle 'icadariu/snipmate.vim'
-"Bundle 'Lokaltog/vim-powerline'
-" commented
-"Bundle 'motemen/git-vim'
-"Bundle 'vim-scripts/ShowMarks'
-"Bundle 'kevinw/pyflakes-vim'
-"Bundle 'scrooloose/syntastic'
-"Bundle 'scrooloose/nerdtree.git'
-"Bundle 'klen/python-mode'
-"Bundle 'vim-scripts/taglist.vim'
-"Bundle 'L9'
-"Bundle 'vim-scripts/buftabs'
-"Bundle 'cschlueter/vim-wombat'
-"Bundle 'vim-scripts/svndiff'
-"Bundle 'tomtom/checksyntax_vim'
-"Bundle 'altercation/vim-colors-solarized'
-"Bundle 'wincent/Command-T'
-"Bundle 'vim-scripts/typofree.vim'
-"Bundle 'skyl/vim-config-python-ide'
-"Bundle 'vim-scripts/FuzzyFinder'
-"Bundle 'mhz/vim-matchit'
-"Bundle 'tpope/vim-surround'
-"Bundle 'msanders/snipmate.vim'
-"Bundle 'scrooloose/snipmate-snippets'
-"Bundle 'vim-scripts/UltiSnips'
-"Bundle 'gmarik/vim-markdown'
-"Bundle 'vim-scripts/HTML-AutoCloseTag'
-"Bundle 'skammer/vim-css-color'
-"Bundle 'robhudson/snipmate_for_django'
-"Bundle 'mhz/html5.vim'
-"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'} "Sparkup lets you write HTML code faster
+if TestVundle == 0
+    echo "Installing Bundles, please ignore key map error messages"
+    echo ""
+    :BundleInstall!
+endif
 
 filetype plugin indent on     " required!
 " :BundleInstall  - install bundles (won't update installed)
