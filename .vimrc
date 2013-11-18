@@ -59,8 +59,8 @@ set nocompatible
 filetype plugin indent on
 " Turn on smart indent
 set smartindent         " it may brake Eric Mc Sween's indent fix
-set softtabstop=4
-set shiftwidth=4        " indent width for autoindent
+set softtabstop=2
+set shiftwidth=2        " indent width for autoindent
 set shiftround
 set expandtab           " turn tabs into whitespace
 set nojoinspaces
@@ -179,6 +179,7 @@ nmap <silent> <leader>n :silent :nohlsearch<CR>
 "set iptables if it's not working automatically
 nmap <silent> <leader>i :silent :setfiletype iptables<CR>
 nmap <silent> <leader>s :w<CR>
+",c -> pyflakes quick commands like quick fix (,cc)
 nnoremap <F12> :set nonumber!<CR>
 nnoremap <F9> :ShowMarksToggle<CR>
 " Move entire line/block up and down
