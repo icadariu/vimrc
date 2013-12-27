@@ -9,9 +9,9 @@
 
 # check if git is installed
 
-which git > /dev/null
+which git &> /dev/null
 [ $? -eq 1 ] && echo "git is not installed..." && exit 1
-which vim > /dev/null
+which vim &> /dev/null
 [ $? -eq 1 ] && echo "Install vim first" && exit 1
 
 git clone https://github.com/icadariu/vimrc.git ~/.vim
