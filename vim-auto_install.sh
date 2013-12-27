@@ -1,6 +1,6 @@
 #!/bin/bash
 # Description: It will automatically install vim plugins and make the necessary symbolic link.
-
+# http://j.mp/1g7il5x   -> short link to autoinstall-script
 
 # backup current vim if exists
 
