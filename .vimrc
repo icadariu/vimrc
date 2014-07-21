@@ -260,7 +260,7 @@ set number " Turn on line numbers
 " a passphrase directly with symmetric encryption in the gpg commands below.
 au BufNewFile,BufReadPre *.gpg :set secure viminfo= noswapfile nobackup nowritebackup history=0 binary
 au BufReadPost *.gpg :%!gpg -d 2>/dev/null
-au BufWritePre *.gpg :%!gpg -e -r 'ionut.cadariu@gmail.com' 2>/dev/null
+au BufWritePre *.gpg :%!gpg -e -r 'email@example.com' 2>/dev/null
 au BufWritePost *.gpg u
 
 filetype on
