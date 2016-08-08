@@ -36,6 +36,8 @@ Bundle 'kien/tabman.vim'
 Bundle 'klen/python-mode'
 Bundle 'puppetlabs/puppet-syntax-vim'
 Bundle 'moll/vim-node'
+Bundle 'pangloss/vim-javascript'
+Bundle 'hashivim/vim-terraform'
 
 if TestVundle == 0
     echo "Installing Bundles, please ignore key map error messages"
