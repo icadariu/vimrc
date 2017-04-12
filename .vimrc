@@ -293,3 +293,5 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd BufNewFile,BufRead *.ansible  set syntax=ansible
 
 hi pythonOperator guifg=#f07746 ctermfg=209 gui=none
+
+let g:terraform_align=1
