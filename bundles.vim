@@ -18,7 +18,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " repos on github
-Bundle 'chase/vim-ansible-yaml'
+Bundle 'pearofducks/ansible-vim'
 Bundle 'Raimondi/delimitMate'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'scrooloose/nerdcommenter'
