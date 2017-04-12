@@ -14,14 +14,30 @@ To manual install, follow this steppes:
     export TERM="xterm-256color"
 
 
-### Plugins
+### Current plugins
 
-* [Raimondi/delimitMate](https://github.com/Raimondi/delimitMate)
-* [Lokaltog/vim-easymotion](https://github.com/Lokaltog/vim-easymotion)
-* [scrooloose/nerdcommenter](http://github.com/scrooloose/nerdcommenter)
-* [ervandew/supertab](https://github.com/ervandew/supertab)
-* [vim-scripts/SearchComplete](https://github.com/vim-scripts/SearchComplete)
-* [tpope/vim-fugitive](http://github.com/tpope/vim-fugitive)
+* gmarik/vundle
+* pearofducks/ansible-vim
+* Raimondi/delimitMate
+* Lokaltog/vim-easymotion
+* scrooloose/nerdcommenter
+* ervandew/supertab
+* vim-scripts/SearchComplete
+* vim-scripts/trailing-whitespace
+* vim-scripts/iptables
+* tomtom/tlib_vim.git
+* MarcWeber/vim-addon-mw-utils.git
+* garbas/vim-snipmate.git
+* tpope/vim-fugitive
+* saltstack/salt-vim
+* sjl/gundo.vim
+* kien/tabman.vim
+* klen/python-mode
+* puppetlabs/puppet-syntax-vim
+* moll/vim-node
+* pangloss/vim-javascript
+* hashivim/vim-terraform
+
 
 ## delimitMate
 
