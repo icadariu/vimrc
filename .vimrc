@@ -41,6 +41,8 @@ set backspace=indent,eol,start
 set title
 set showmatch                                   " show matching brackets/parenthesis
 
+"fix windows line endings issue
+set ff=unix
 "allow backspacing over everything in insert mode
 set bs=2
 set viminfo='1000,f1,<500 "read/write a .viminfo file, don't store more
@@ -295,3 +297,8 @@ autocmd BufNewFile,BufRead *.ansible  set syntax=ansible
 hi pythonOperator guifg=#f07746 ctermfg=209 gui=none
 
 let g:terraform_align=1
+
+"""
+" json format
+" ""
+" execute '%!python -m json.tool' | w
