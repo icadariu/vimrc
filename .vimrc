@@ -296,9 +296,7 @@ autocmd BufNewFile,BufRead *.ansible  set syntax=ansible
 
 hi pythonOperator guifg=#f07746 ctermfg=209 gui=none
 
+"Terraform settings
 let g:terraform_align=1
-
-"""
-" json format
-" ""
-" execute '%!python -m json.tool' | w
+let g:terraform_fmt_on_save=1
+autocmd FileType terraform setlocal commentstring=#%s
