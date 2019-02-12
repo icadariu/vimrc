@@ -39,6 +39,7 @@ Bundle 'vim-scripts/SearchComplete'
 Bundle 'pearofducks/ansible-vim'
 Bundle 'vim-scripts/trailing-whitespace'
 Bundle 'hashivim/vim-terraform'
+Bundle 'hashivim/vim-vagrant'
 
 if TestVundle == 0
     echo "Installing Bundles, please ignore key map error messages"
