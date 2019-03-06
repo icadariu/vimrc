@@ -39,7 +39,8 @@ Bundle 'vim-scripts/SearchComplete'
 Bundle 'pearofducks/ansible-vim'
 Bundle 'vim-scripts/trailing-whitespace'
 Bundle 'hashivim/vim-terraform'
-
+Bundle 'chr4/nginx.vim'
+" use settype nginx to activate it
 if TestVundle == 0
     echo "Installing Bundles, please ignore key map error messages"
     echo ""
