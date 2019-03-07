@@ -300,3 +300,5 @@ hi pythonOperator guifg=#f07746 ctermfg=209 gui=none
 let g:terraform_align=1
 let g:terraform_fmt_on_save=1
 autocmd FileType terraform setlocal commentstring=#%s
+
+" redraw screen -> Ctrl + l
