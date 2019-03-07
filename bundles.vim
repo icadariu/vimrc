@@ -40,6 +40,8 @@ Bundle 'pearofducks/ansible-vim'
 Bundle 'vim-scripts/trailing-whitespace'
 Bundle 'hashivim/vim-terraform'
 Bundle 'hashivim/vim-vagrant'
+Bundle 'hashivim/vim-packer'
+Bundle 'hashivim/vim-vaultproject'
 
 if TestVundle == 0
     echo "Installing Bundles, please ignore key map error messages"
