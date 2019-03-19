@@ -1,0 +1,9 @@
+setlocal et ts=2 ai sw=2 nu sts=0
+set cursorline
+
+" et -> expand tab
+" ai -> autoindent
+" sw -> shiftwidth
+" nu -> number
+" sts -> softtabstop
+" http://vimdoc.sourceforge.net/htmldoc/options.html
