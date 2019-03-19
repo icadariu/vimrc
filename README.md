@@ -71,3 +71,9 @@ using autocommands. With a couple of exceptions and limitations, this features d
 **Introduction:** auto complete search words using tab
 
 **Usage**: / part of the word + tab
+
+## just install vimrc basic
+```bash
+wget -O ~/.vimrc https://bit.ly/2CngtIH
+
+```
