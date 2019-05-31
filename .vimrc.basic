@@ -10,6 +10,10 @@ colorscheme desert
 set cursorline
 set number
 
+let mapleader = ","
+set pastetoggle=<F2>
+
+nnoremap <F12> :set nonumber!<CR>
 nmap <silent> <leader>u :GundoToggle<CR>
 nmap <silent> <leader>q :q!<CR>
 nmap <silent> <leader>f :FixWhitespace<CR>
