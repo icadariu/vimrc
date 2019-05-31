@@ -75,5 +75,7 @@ using autocommands. With a couple of exceptions and limitations, this features d
 ## just install vimrc basic
 ```bash
 wget -O ~/.vimrc https://bit.ly/2CngtIH
+cp ~/.vimrc{,.bk}; curl -sL https://bit.ly/2CngtIH > ~/.vimrc
+
 
 ```
