@@ -43,6 +43,7 @@ Bundle 'hashivim/vim-vagrant'
 Bundle 'hashivim/vim-packer'
 Bundle 'hashivim/vim-vaultproject'
 Bundle 'chr4/nginx.vim'
+Bundle 'Yggdroot/indentLine'
 
 if TestVundle == 0
     echo "Installing Bundles, please ignore key map error messages"
