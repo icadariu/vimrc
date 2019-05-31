@@ -10,3 +10,8 @@ colorscheme desert
 set cursorline
 set number
 
+nmap <silent> <leader>u :GundoToggle<CR>
+nmap <silent> <leader>q :q!<CR>
+nmap <silent> <leader>f :FixWhitespace<CR>
+nmap <silent> <leader>n :silent :nohlsearch<CR>
+nmap <silent> <leader>s :w<CR>
