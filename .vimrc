@@ -198,6 +198,7 @@ autocmd BufNewFile,BufRead *.ansible  set syntax=ansible
 
 hi pythonOperator guifg=#f07746 ctermfg=209 gui=none
 
+set t_Co=256                " 256 colors terminal
 "Terraform settings
 let g:terraform_align=1
 let g:terraform_fmt_on_save=1
@@ -205,11 +206,15 @@ autocmd FileType terraform setlocal commentstring=#%s
 " spell stuff
 autocmd Filetype gitcommit setlocal spell spelllang=en_us textwidth=72
 set spellfile=~/.vim/spell_words.utf-8.add
+autocmd BufRead,BufNewFile *.md set filetype=markdown
+" Spell-check Markdown files
+autocmd FileType markdown setlocal spell
+" Autocogmplete with dictionary words when spell check is on
+set complete+=kspell
 
-set t_Co=256                " 256 colors terminal
+" Shortcuts
 " Spellcheck shortcuts - http://vimdoc.sourceforge.net/htmldoc/spell.html
 "z= -> will suggest correctly spelled words
 "[s or ]s  -> move to the next misspelled word
 "zg or zG -> add word to the spellfile list
-
 " redraw screen -> Ctrl + l
