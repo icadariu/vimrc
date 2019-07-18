@@ -31,7 +31,7 @@ filetype plugin indent on    " required
 
 "https://github.com/Yggdroot/indentLine
 "let g:indentLine_setColors = 0
-let g:indentLine_color_tty_light = 2 " (default: 4)
+let g:indentLine_color_tty_light = 4 " (default: 4)
 
 """"""""""""""""""""""""""""""""""""""""""""""""
 " General config
@@ -54,7 +54,7 @@ set tabpagemax=15       " only show 15 tabs
 set showmode            " display the current mode
 set showmatch           " show matching brackets/parenthesis
 set cursorline          " highlight current line
-set cursorcolumn        " cursor collumn
+set cursorcolumn        " cursor column
 " Intuitive backspacing in insert mode
 set backspace=indent,eol,start
 set title
@@ -79,12 +79,12 @@ set smartindent         " it may brake Eric Mc Sween's indent fix
 set softtabstop=2
 set shiftwidth=2        " indent width for autoindent
 set shiftround
-set expandtab           " turn tabs into whitespace
+set expandtab           " turn tabs into white space
 set nojoinspaces
 "folding settings
 set foldmethod=indent   "fold based on indent
 set foldnestmax=10      "deepest fold is 10 levels
-set nofoldenable        "dont fold by default
+set nofoldenable        "don't fold by default
 set foldlevel=1         "this is just what i use
 "Always show cursor position
 set ruler
@@ -114,7 +114,7 @@ endif
 syntax on
 
 if &diff
-  "I'm only interested in diff colours
+  "I'm only interested in diff colors
   syntax off
 endif
 
@@ -122,7 +122,7 @@ endif
 "not the original Bourne shell which very few use
 let g:is_posix = 1
 
-" Highlighting: Setup some nice colours to show the mark positions.
+" Highlighting: Setup some nice colors to show the mark positions.
 hi default ShowMarksHLl ctermfg=253 ctermbg=None cterm=bold
 hi default ShowMarksHLu ctermfg=253 ctermbg=None cterm=bold
 hi default ShowMarksHLo ctermfg=253 ctermbg=None cterm=bold
@@ -202,8 +202,14 @@ hi pythonOperator guifg=#f07746 ctermfg=209 gui=none
 let g:terraform_align=1
 let g:terraform_fmt_on_save=1
 autocmd FileType terraform setlocal commentstring=#%s
+" spell stuff
+autocmd Filetype gitcommit setlocal spell spelllang=en_us textwidth=72
+set spellfile=~/.vim/spell_words.utf-8.add
 
 set t_Co=256                " 256 colors terminal
-
+" Spellcheck shortcuts - http://vimdoc.sourceforge.net/htmldoc/spell.html
+"z= -> will suggest correctly spelled words
+"[s or ]s  -> move to the next misspelled word
+"zg or zG -> add word to the spellfile list
 
 " redraw screen -> Ctrl + l
