@@ -204,17 +204,20 @@ let g:terraform_align=1
 let g:terraform_fmt_on_save=1
 autocmd FileType terraform setlocal commentstring=#%s
 " spell stuff
-autocmd Filetype gitcommit setlocal spell spelllang=en_us textwidth=72
-set spellfile=~/.vim/spell_words.utf-8.add
-autocmd BufRead,BufNewFile *.md set filetype=markdown
-" Spell-check Markdown files
+"set spellfile=~/.vim/spell/spell-words.utf-8.add
+set spell spelllang=en_us spell
+set spellsuggest=fast,20 "Don't show too much suggestion for spell check.
+set spellfile=~/.vim/en.utf-8.add
 autocmd FileType markdown setlocal spell
+autocmd Filetype gitcommit setlocal spell textwidth=72
+"autocmd BufRead,BufNewFile *.md set filetype=markdown
+" Spell-check Markdown files
 " Autocogmplete with dictionary words when spell check is on
-set complete+=kspell
-
+set nospell
 " Shortcuts
 " Spellcheck shortcuts - http://vimdoc.sourceforge.net/htmldoc/spell.html
 "z= -> will suggest correctly spelled words
 "[s or ]s  -> move to the next misspelled word
 "zg or zG -> add word to the spellfile list
 " redraw screen -> Ctrl + l
+"set mmp=5000  -> if issue with maxmempattern

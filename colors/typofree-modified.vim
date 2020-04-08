@@ -57,7 +57,7 @@ hi TabLineSel    ctermfg=208   ctermbg=NONE  cterm=NONE
 hi TabLineFill   ctermfg=94    ctermbg=236   cterm=underline
 hi TabLine       ctermfg=94    ctermbg=236   cterm=underline
 
-hi Comment       ctermfg=240   ctermbg=NONE  cterm=NONE
+hi Comment       ctermfg=130   ctermbg=NONE  cterm=NONE
 hi Todo          ctermfg=208   ctermbg=NONE  cterm=underline
 
 hi String        ctermfg=65    ctermbg=NONE  cterm=NONE " 'blah'
