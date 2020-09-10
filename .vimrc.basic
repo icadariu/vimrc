@@ -1,6 +1,6 @@
 set et ts=2 ai sw=2 nu sts=0 
 set backspace=indent,eol,start
-set cursorline
+set cursorline cursorcolumn
 
 let mapleader = ","
 set pastetoggle=<F2>
