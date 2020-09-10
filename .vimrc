@@ -221,3 +221,7 @@ set nospell
 "zg or zG -> add word to the spellfile list
 " redraw screen -> Ctrl + l
 "set mmp=5000  -> if issue with maxmempattern
+"set list -> will display tab chars in your file
+"set expandtab -> insert spaces instead of tab
+":retab -> change all existing tabs
+":set shiftwidth=2 -> change nr of spaces inserted
