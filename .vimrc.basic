@@ -1,14 +1,6 @@
-setlocal et ts=2 ai sw=2 nu sts=0
-" et -> expand tab
-" ai -> autoindent
-" sw -> shiftwidth
-" nu -> number
-" sts -> softtabstop
-" http://vimdoc.sourceforge.net/htmldoc/options.html
-colorscheme desert
-" https://www.techbeatly.com/2018/06/setup-your-vim-editor-for-ansible-playbook.html/
+set et ts=2 ai sw=2 nu sts=0 
+set backspace=indent,eol,start
 set cursorline
-set number
 
 let mapleader = ","
 set pastetoggle=<F2>
@@ -19,3 +11,15 @@ nmap <silent> <leader>q :q!<CR>
 nmap <silent> <leader>f :FixWhitespace<CR>
 nmap <silent> <leader>n :silent :nohlsearch<CR>
 nmap <silent> <leader>s :w<CR>
+
+colorscheme desert
+
+
+" et -> expand tab
+" ai -> autoindent
+" sw -> shiftwidth
+" nu -> number
+" sts -> softtabstop
+
+" http://vimdoc.sourceforge.net/htmldoc/options.html
+" https://www.techbeatly.com/2018/06/setup-your-vim-editor-for-ansible-playbook.html/
