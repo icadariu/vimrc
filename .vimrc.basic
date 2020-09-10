@@ -21,5 +21,7 @@ colorscheme desert
 " nu -> number
 " sts -> softtabstop
 
+" Links explaining vim
 " http://vimdoc.sourceforge.net/htmldoc/options.html
 " https://www.techbeatly.com/2018/06/setup-your-vim-editor-for-ansible-playbook.html/
+" https://vi.stackexchange.com/a/2163
