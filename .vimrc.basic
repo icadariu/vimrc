@@ -1,4 +1,4 @@
-set et ts=2 ai sw=2 nu sts=0 
+set et ic nu ai ts=2 sw=2 sts=0
 set backspace=indent,eol,start
 set cursorline cursorcolumn
 
@@ -16,6 +16,7 @@ colorscheme desert
 
 
 " et -> expand tab
+" ic -> ignore case
 " ai -> autoindent
 " sw -> shiftwidth
 " nu -> number
