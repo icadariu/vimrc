@@ -1,4 +1,4 @@
-set et ic nu ai ts=2 sw=2 sts=0
+set nu ai et ic ts=2 sw=2 sts=0
 set backspace=indent,eol,start
 set cursorline cursorcolumn
 
@@ -15,11 +15,12 @@ nmap <silent> <leader>s :w<CR>
 colorscheme desert
 
 
+" nu -> number
+" ai -> autoindent
 " et -> expand tab
 " ic -> ignore case
-" ai -> autoindent
+" ts -> tabstop
 " sw -> shiftwidth
-" nu -> number
 " sts -> softtabstop
 
 " Links explaining vim
