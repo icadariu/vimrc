@@ -210,6 +210,12 @@ set spellsuggest=fast,20 "Don't show too much suggestion for spell check.
 set spellfile=~/.vim/en.utf-8.add
 autocmd FileType markdown setlocal spell
 autocmd Filetype gitcommit setlocal spell textwidth=72
+
+" set different version of snipmate parser (1)
+let g:snipMate = { 'snippet_version' : 1 }
+
+" set filetype ansible - https://github.com/pearofducks/ansible-vim
+au BufRead,BufNewFile */playbooks/*.yml set filetype=yaml.ansible
 "autocmd BufRead,BufNewFile *.md set filetype=markdown
 " Spell-check Markdown files
 " Autocogmplete with dictionary words when spell check is on
