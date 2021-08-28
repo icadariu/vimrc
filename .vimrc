@@ -37,6 +37,7 @@ let g:indentLine_color_tty_light = 4 " (default: 4)
 " General config
 """"""""""""""""""""""""""""""""""""""""""""""""
 colorscheme typofree-modified
+"set autoread
 
 """""""""""""""""""""""""""""""""""""
 " Different set calls
