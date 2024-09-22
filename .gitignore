@@ -4,3 +4,6 @@ view/
 *.old
 *.swp
 .netrwhist
+autoload/*
+plugged/*
+

@@ -1,33 +1,22 @@
 set nocompatible            " Disable vi compatibility
-filetype on                 " filetype must be 'on' before setting it 'off'
-                            " otherwise it exits with a bad status and breaks
-filetype off                " force reloading *after* pathogen loaded
+set relativenumber          " Set relative numers
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" Using vim-plug https://github.com/junegunn/vim-plug
+call plug#begin()
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-commentary'
-Plugin 'Raimondi/delimitMate'
-Plugin 'MarcWeber/vim-addon-mw-utils.git'
-Plugin 'tomtom/tlib_vim.git'
-Plugin 'garbas/vim-snipmate.git'
-Plugin 'tpope/vim-fugitive'
-Plugin 'ervandew/supertab'
-Plugin 'vim-scripts/SearchComplete'
-Plugin 'pearofducks/ansible-vim'
-Plugin 'vim-scripts/trailing-whitespace'
-Plugin 'hashivim/vim-terraform'
-Plugin 'hashivim/vim-vagrant'
-Plugin 'hashivim/vim-packer'
-Plugin 'hashivim/vim-vaultproject'
-Plugin 'chr4/nginx.vim'
-Plugin 'Yggdroot/indentLine'
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
+" Plugin list
+Plug 'tpope/vim-commentary'
+Plug 'Raimondi/delimitMate'
+Plug 'tpope/vim-fugitive'
+Plug 'ervandew/supertab'
+Plug 'vim-scripts/trailing-whitespace'
+Plug 'hashivim/vim-terraform'
+
+" Make sure to add new plugins before plug#end
+call plug#end()
+
 filetype plugin indent on    " required
+filetype on
 
 "https://github.com/Yggdroot/indentLine
 "let g:indentLine_setColors = 0
@@ -36,7 +25,9 @@ let g:indentLine_color_tty_light = 4 " (default: 4)
 """"""""""""""""""""""""""""""""""""""""""""""""
 " General config
 """"""""""""""""""""""""""""""""""""""""""""""""
-colorscheme typofree-modified
+"colorscheme typofree-modified
+" new colorscheme
+colorscheme jellybeans
 "set autoread
 
 """""""""""""""""""""""""""""""""""""
