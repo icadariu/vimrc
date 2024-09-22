@@ -9,8 +9,8 @@ Plug 'tpope/vim-commentary'
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-fugitive'
 Plug 'ervandew/supertab'
-Plug 'vim-scripts/trailing-whitespace'
 Plug 'hashivim/vim-terraform'
+Plug 'ntpeters/vim-better-whitespace'
 
 " Make sure to add new plugins before plug#end
 call plug#end()
@@ -18,10 +18,11 @@ call plug#end()
 filetype plugin indent on    " required
 filetype on
 
-"https://github.com/Yggdroot/indentLine
-"let g:indentLine_setColors = 0
-let g:indentLine_color_tty_light = 4 " (default: 4)
-
+" Better whitespace plugin configs
+"let g:better_whitespace_enabled=1
+let g:strip_whitespace_on_save=1
+let b:better_whitespace_enabled = 1
+let b:better_whitespace_guess = 0
 """"""""""""""""""""""""""""""""""""""""""""""""
 " General config
 """"""""""""""""""""""""""""""""""""""""""""""""
@@ -147,7 +148,7 @@ nnoremap <Leader>g :e#<CR>
 " other vim shortcuts
 nmap <silent> <leader>u :GundoToggle<CR>
 nmap <silent> <leader>q :q!<CR>
-nmap <silent> <leader>f :FixWhitespace<CR>
+nmap <silent> <leader>f :StripWhitespace<CR>
 nmap <silent> <leader>n :silent :nohlsearch<CR>
 nmap <silent> <leader>s :w<CR>
 ",c -> pyflakes quick commands like quick fix (,cc)
