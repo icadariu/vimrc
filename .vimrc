@@ -26,9 +26,9 @@ let b:better_whitespace_guess = 0
 """"""""""""""""""""""""""""""""""""""""""""""""
 " General config
 """"""""""""""""""""""""""""""""""""""""""""""""
-"colorscheme typofree-modified
+colorscheme typofree-modified
 " new colorscheme
-colorscheme jellybeans
+"colorscheme jellybeans
 "set autoread
 
 """""""""""""""""""""""""""""""""""""
