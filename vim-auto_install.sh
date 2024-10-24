@@ -4,9 +4,8 @@
 
 # backup current vim if exists
 
-[ -d ~/.vim ] && mv ~/.vim ~/.vim.old
-[ -f ~/.vimrc ] && mv ~/.vimrc ~/.vimrc.old
-
+[ -d ~/.vim ] && mv ~/.vim{,.bk}
+[ -f ~/.vimrc ] && mv ~/.vimrc{,.bk}
 
 command -v git &>/dev/null || { echo "git not present"; exit 1; }
 command -v vim &>/dev/null || { echo "vim not present"; exit 1; }
@@ -21,7 +20,7 @@ curl -O https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/
 
 # Installing vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 [ ! -h ~/.vimrc ] && ln -s ~/.vim/.vimrc ~/.vimrc
 
